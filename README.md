@@ -2,10 +2,6 @@
 
 This repository contains the implementation of our method for bridging the Sim2Real gap in soft robotics using Conditional Flow Matching (CFM). Our approach learns a mapping between simulation and real-world domains to accurately predict force and deformation in soft robotic systems.
 
-## Abstract
-
-Modelling soft robots remains a significant challenge due to high computational costs and frequent mismatches with real-world behaviour; a phenomenon known as the Sim2Real gap. This paper addresses the Sim2Real gap through Conditional Flow Matching, which learns a mapping between the simulation domain and the real-world experimental domain. A neural network learns a conditional probability path that transforms simulated states into real-world observations, conditioned on control inputs, thereby minimising simulation inaccuracies. The method is demonstrated through benchmark Sim2Sim and Sim2Real tensile tests, and additionally demonstrated in the domain of soft gripping using Fin Ray grippers, for which we introduce a novel encoder architecture that learns a representation of the contact state, enabling the model to generalize to previously unseen interactions. The model provides highly accurate prediction of force and deformation, successfully capturing complex elastic behaviours including hysteresis and force fluctuations. Experimental results validate that Conditional Flow Matching can bridge the Sim2Real gap for various soft robot morphologies, without requiring large datasets, and with strong generalisation capabilities.
-
 ## Features
 
 - **Conditional Flow Matching**: Novel application of CFM to bridge the Sim2Real gap in soft robotics
@@ -71,7 +67,7 @@ cd tensile-sim2real-src
 python data_gen_model_cfm_extra_condi.py
 ```
 
-## Citation
+<!-- ## Citation
 
 If you use this code in your research, please cite our paper:
 
@@ -82,11 +78,11 @@ If you use this code in your research, please cite our paper:
   journal={Journal Name},
   year={2024}
 }
-```
+``` -->
 
 ## License
 
-Apache License
+This project is licensed under the Apache License 2.0. See [LICENSE](LICENSE) file for details.
 
 ## Contact
 

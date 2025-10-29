@@ -10,31 +10,6 @@ This repository contains the implementation of our method for bridging the Sim2R
 - **Hysteresis Modeling**: Captures complex elastic behaviors including hysteresis and force fluctuations
 - **Strong Generalization**: Effective performance with limited datasets and on unseen interactions
 
-## Repository Structure
-
-```
-├── flow_model/                          # Core flow matching models
-│   ├── conditional_flow.py              # Conditional vector field implementation
-│   ├── conditional_flow_match.py        # Flow matching algorithms
-│   └── data_model.py                    # Force predictor neural network
-│
-├── utils/                               # Utility functions
-│   ├── data_funcs.py                    # General data processing utilities
-│   └── data_funcs_tensile_sim2real_gen.py  # Tensile test data processing
-│
-├── tensile-sim2real-src/                # Tensile test experiments
-│   ├── data_gen_model_cfm_extra_condi.py   # CFM training for tensile tests
-│   ├── data_tensile_exp/                # Experimental tensile data
-│   ├── data_tensile_warp/               # Simulated tensile data
-│   ├── data_tensile_exp_val/            # Experimental validation data
-│   └── data_tensile_warp_val/           # Simulated validation data
-│
-├── dataset_model_sim2real/              # Trained models (*.pth files)
-├── dataset_model/                       # Additional model checkpoints
-│
-└── README.md                            # This file
-```
-
 ## Installation
 
 ### Prerequisites

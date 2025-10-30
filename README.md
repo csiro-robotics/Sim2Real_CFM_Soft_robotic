@@ -31,6 +31,22 @@ cd Sim2Real_CFM_Soft_robotic
 pip install -r requirements.txt
 ```
 
+## Dataset
+
+### Download Dataset
+
+The complete dataset for this project is available through CSIRO Data Access Portal:
+
+**Dataset Link**: https://data.csiro.au/collection/csiro:65870
+
+### Dataset Contents
+
+The dataset includes:
+- **Tensile Sim2Real data**: Experimental and simulated tensile test measurements
+- **Tensile Sim2Sim data**: SOFA and Warp simulation comparisons  
+- **Fin Ray Gripper data**: Real-world and simulated gripper force measurements
+
+
 ## Usage
 
 ### Training the CFM Model

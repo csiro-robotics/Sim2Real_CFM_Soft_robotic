@@ -55,6 +55,7 @@ Run the training script for tensile test Sim2Real:
 
 ```bash
 cd tensile-sim2real-src
+python data_gen_model_train_sim2real_gen.py
 python data_gen_model_cfm_extra_condi.py
 ```
 

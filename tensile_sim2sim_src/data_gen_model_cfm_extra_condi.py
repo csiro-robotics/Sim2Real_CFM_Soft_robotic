@@ -112,14 +112,13 @@ def main():
     sofa_val_data_raw = validate_and_clean_data(load_processed_data(is_sofa=True), "SOFA Validation")
     warp_val_data_raw = validate_and_clean_data(load_processed_data(is_sofa=False), "Warp Validation")
 
-    checkpoint_sofa = torch.load("dataset_model/predictor_sofa.pth", map_location=device)
+    checkpoint_sofa = torch.load("dataset_model_sim2sim/predictor_sofa.pth", map_location=device)
     num_points = checkpoint_sofa.get('max_points', 7)
     predictor_sofa = ForcePredictor(input_dim=5, num_points=num_points)
     predictor_sofa.load_state_dict(checkpoint_sofa['model_state_dict'])
     sofa_mean = checkpoint_sofa['mean']
     sofa_std = checkpoint_sofa['std']
-
-    checkpoint_warp = torch.load("dataset_model/predictor_warp.pth", map_location=device)
+    checkpoint_warp = torch.load("dataset_model_sim2sim/predictor_warp.pth", map_location=device)
     predictor_warp = ForcePredictor(input_dim=5, num_points=num_points)
     predictor_warp.load_state_dict(checkpoint_warp['model_state_dict'])
     warp_mean = checkpoint_warp['mean']
